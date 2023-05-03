@@ -98,16 +98,13 @@ function setup() {
   print(circles)
   shaixuan()
   DrawCircle();
-
 }
+
 function draw() {
   background(9,116,172);
-
   background_thing()
-  // DrawCircle();
   DrawCircle_shai();
   howtoread()
-
 }
 
 function DrawCircle() {
@@ -216,7 +213,6 @@ function DrawCircle_shai() {
             noFill();
             arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(0), radians(30));
             noStroke();
-
           }
           if (cir.threat.includes('Energy production & mining')) {
             stroke('#E76F51');
@@ -244,7 +240,6 @@ function DrawCircle_shai() {
             arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(90), radians(120));
             noStroke();
           }
-
           if (cir.threat.includes('Residential & commercial development')) {
             stroke('#2A9D8F');
             strokeWeight(1.5);
@@ -257,7 +252,6 @@ function DrawCircle_shai() {
             noFill();
             arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(135), radians(165));
             noStroke();
-
           }
           if (cir.threat.includes('Climate change & severe weather')) {
             stroke('#A7CCED');
@@ -271,7 +265,6 @@ function DrawCircle_shai() {
             noFill();
             arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(180), radians(210));
             noStroke();
-
           }
           if (cir.threat.includes('Agriculture & aquaculture')) {
             stroke('#545E75');
@@ -285,7 +278,6 @@ function DrawCircle_shai() {
             noFill();
             arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(225), radians(255));
             noStroke();
-
           }
           if (cir.threat.includes('Natural system modifications')) {
             stroke('#56ACED');
@@ -299,7 +291,6 @@ function DrawCircle_shai() {
             noFill();
             arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(270), radians(300));
             noStroke();
-
           }
           if (cir.threat.includes('Pollution')) {
             stroke('#FFCB77');
@@ -313,7 +304,6 @@ function DrawCircle_shai() {
             noFill();
             arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(315), radians(345));
             noStroke();
-
           }
           pop()
         }
@@ -384,7 +374,6 @@ function DrawCircle_shai() {
                   noFill();
                   arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(0), radians(30));
                   noStroke();
-
                 }
                 if (cir.threat.includes('Energy production & mining')) {
                   stroke('#E76F51');
@@ -412,7 +401,6 @@ function DrawCircle_shai() {
                   arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(90), radians(120));
                   noStroke();
                 }
-
                 if (cir.threat.includes('Residential & commercial development')) {
                   stroke('#2A9D8F');
                   strokeWeight(1.5);
@@ -425,7 +413,6 @@ function DrawCircle_shai() {
                   noFill();
                   arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(135), radians(165));
                   noStroke();
-
                 }
                 if (cir.threat.includes('Climate change & severe weather')) {
                   stroke('#A7CCED');
@@ -439,7 +426,6 @@ function DrawCircle_shai() {
                   noFill();
                   arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(180), radians(210));
                   noStroke();
-
                 }
                 if (cir.threat.includes('Agriculture & aquaculture')) {
                   stroke('#545E75');
@@ -453,7 +439,6 @@ function DrawCircle_shai() {
                   noFill();
                   arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(225), radians(255));
                   noStroke();
-
                 }
                 if (cir.threat.includes('Natural system modifications')) {
                   stroke('#56ACED');
@@ -467,7 +452,6 @@ function DrawCircle_shai() {
                   noFill();
                   arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(270), radians(300));
                   noStroke();
-
                 }
                 if (cir.threat.includes('Pollution')) {
                   stroke('#FFCB77');
@@ -481,7 +465,6 @@ function DrawCircle_shai() {
                   noFill();
                   arc(0, 0, 5 * cir.size + 10, 5 * cir.size + 10, radians(315), radians(345));
                   noStroke();
-
                 }
                 pop()
               }
@@ -556,17 +539,12 @@ function background_thing() {
   text('HETERODONTIFORMES', 5250, 50);
   text('PRISTIOPHORIFORMES', 5450, 50);
 
-  // fill('#0970A6');
-  // stroke('#ffffff');
-  // strokeWeight(10);
-  // rect(25, 40, 250, 1000);
-
   textFont(font1);
   noStroke();
   textSize(18);
   fill(255);
   textStyle(BOLD);
-  textAlign(CENTER, CENTER); // 设置文本对齐方式为居中
+  textAlign(CENTER, CENTER); 
   text('HOW TO READ', 150, 75);
 
   noStroke();
@@ -583,18 +561,14 @@ function shaixuan() {
   trendRadio.option('Increasing');
   trendRadio.option('Stable');
   trendRadio.option('Unknown');
-  trendRadio.style('100px', '60px');
-  trendRadio.position(210, 120);
+  trendRadio.position(240, 120);
   trendRadio.selected('All');
   trendRadio.style('display', 'flex');
   trendRadio.style('flex-direction', 'column');
-  trendRadio.style('gap', '-10px');
-
-  // trendRadio.style('color',color(0,0,0,0))
-  //textAlign(RIGHT);
   const radios = trendRadio.elt.getElementsByTagName('input');
   for (let i = 0; i < radios.length; i++) {
-    radios[i].nextSibling.style.opacity = 0;
+    radios[i].nextSibling.innerHTML = null;
+    radios[i].innerHTML = null;
   }
   fill(255, 0, 0);
 
@@ -606,18 +580,17 @@ function shaixuan() {
   sizeRadio.option('Near Threatened');
   sizeRadio.option('Least Concern');
   sizeRadio.option('Data Deficient');
-  // sizeRadioo.style('100px', '60px');
-  sizeRadio.position(170, 320);
+  sizeRadio.position(240, 320);
   sizeRadio.selected('All');
   sizeRadio.style('display', 'flex');
   sizeRadio.style('flex-direction', 'column');
   const radios1 = sizeRadio.elt.getElementsByTagName('input');
   for (let i = 0; i < radios1.length; i++) {
-    radios1[i].nextSibling.style.opacity = 0;
+    radios1[i].nextSibling.innerHTML = null;
+    radios1[i].innerHTML = null;
   }
   textAlign(RIGHT);
   fill(255, 0, 0);
-
   threatRadio = createRadio();
   threatRadio.option('All');
   threatRadio.option('Biological resource use');
@@ -628,18 +601,16 @@ function shaixuan() {
   threatRadio.option('Agriculture & aquaculture');
   threatRadio.option('Natural system modifications');
   threatRadio.option('Pollution');
-  threatRadio.position(100, 550);
+  threatRadio.position(240, 550);
   threatRadio.selected('All');
   threatRadio.style('display', 'flex');
   threatRadio.style('flex-direction', 'column');
-  //threatRadio.style('textSize', '100');
   const radios2 = threatRadio.elt.getElementsByTagName('input');
   for (let i = 0; i < radios2.length; i++) {
-    radios2[i].nextSibling.style.opacity = 0;
+    radios2[i].nextSibling.innerHTML = null;
+    radios2[i].innerHTML = null;
   }
-  threatRadio.style('gap', '100');
   textAlign(RIGHT);
-
 }
 
 function howtoread() {
@@ -649,7 +620,6 @@ function howtoread() {
   stroke('#ffffff');
   strokeWeight(10);
   rect(25, 40, 250, 955);
-
   textFont(font1);
   noStroke();
   textSize(18);
@@ -720,7 +690,6 @@ function howtoread() {
   fill('#054364');
   ellipse(60, 380, 11);
 
-
   textSize(14);
   fill(255);
   textStyle(BOLD);
@@ -761,6 +730,7 @@ function howtoread() {
   fill(255);
   textStyle(BOLD);
   text('Data Deficient', 137, 505);
+
   //Threat
 
   noStroke();
@@ -798,6 +768,7 @@ function howtoread() {
   text('Biological resource use', 165, 598);
 
   //Energy production & mining
+
   noStroke();
   fill('#054364');
   ellipse(65, 645, 20);
@@ -827,6 +798,7 @@ function howtoread() {
   textStyle(BOLD);
   textAlign(LEFT);
   text('Energy production \n& mining', 100, 598 + 50);
+
   //Human intrusions & disturbance
 
   noStroke();
@@ -891,6 +863,7 @@ function howtoread() {
   textStyle(BOLD);
   textAlign(LEFT);
   text('Residential & commer\n-cial development', 100, 745);
+
   //Climate change & severe weather
 
   noStroke();
@@ -1018,7 +991,6 @@ function howtoread() {
   textAlign(LEFT);
   text('Natural system\n modifications', 100, 895);
 
-
   //Pollution
 
   noStroke();
@@ -1051,7 +1023,5 @@ function howtoread() {
   textAlign(LEFT);
   text('Pollution', 100, 945);
   pop()
-
-
 
 }
