@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-   
-    <script src="firstpage.js"></script>
-    <script src="p5.js"></script>
+	<meta charset="utf-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
 </head>
-<body>
-    
+<body onmouseover="this.className='style1'" onmouseout="this.className='style2'">
+
+
+	<header>
+		<a href=" " class="logo"><img src="index/logo.png" width="50px" height="50px"></a>
+		<ul>
+			<li><a href="index/index.html" style="color: grey;">主页</a></li>
+        <li><a href="find/find.html">发现</a></li>
+        <li><a href="vision/vision.html">视野</a></li>
+        <li><a href="artist/artist.html">约稿</a></li>
+        <li><a href="plus/plus.html">创作</a></li>
+        <li><div class="dropdown">
+        	<span><a href="sign/sign.html">我的</a></span>
+        	<div class="dropdown-content">
+              
+              <a href="message/message.html">消息通知</a>
+              <a href="setting/setting.html">设置</a>
+          	</div>
+      		</div>
+        </li>
+ 		</ul>
+	</header>
+	<script type="text/javascript">
+		window.addEventListener("scroll",function(){
+			var header =document.querySelector("header");
+			header.classList.toggle("sticky",window.scrollY >0);
+		})
+	</script>
+	<!-- 导航栏 -->
+
+	<div class="Name">Sonder</div>
+	<div class="slogan">Color Of Art</div>
+	<div class="mid"><img src="index/arrow.png" width="60px" height="60px" style="height: 50px; line-height: 50px;margin-left: 60px; opacity: 0.6; display: none;"></div>
+	<div class="mid-logo"><img src="index/logo.png" height="26vh" style="height: 26vh; line-height: 26vh;
+	margin-left: 1vw;
+	"></div>
+	<div class="left"></div>
+	<div class="text_1">
+		匆匆的行走<br/>
+		彼此经过<br/>
+		回头时惊鸿一瞥<br/>
+		短暂的注视永久地凝固<br/>
+		<br/>
+		与艺术对视的瞬间<br/>
+		所有压抑紧张的都释然
+	</div>
+	<div class="right"></div>
+	<div class="text_2">
+		出于这样的愿景<br/>
+		我们创造了黑白的环境<br/>
+		希望所有经过<br/>
+		或停留在此的艺术家们<br/>
+		<br/>
+		留下自己的色彩<br/>
+		找到彼此的目光
+	</div>
+	<div class="black"><img src="index/a.png" width="100%"></div>
+	<div class="content">
+		<div class="fir" id="one">SONDER</div>
+		<div class="fir" id="two">SONDER</div>
+		<div class="fir" id="three">SONDER</div>
+		<div class="sec">
+			很难想象<br/>
+			如果人类失去艺术<br/>
+			会是什么情形<br/>
+			如果在久远又混沌的时代里<br/>
+			壁画从未产生<br/>
+			人类会是残缺灰暗的<br/>
+			
+		</div>
+		<div class="thi"><img src="index/venus.jpg"></div>
+		<div class="for">
+			珍视并热爱着<br/>
+			我们愿意为艺术做些什么<br/>
+			一个扩散的氛围<br/>
+			一个沉静的环境<br/>
+			一个交流的回音<br/>
+			让艺术在人类的未来里<br/>
+			持久地存在下去<br/>
+		</div>
+		<div class="fif"><hr/>INTRO</div>
+		<div class="six">ABOUT US</div>
+	</div>
+
+	<div class="last"><img src="index/bottom.png"width="100%"></div>
+	<div class="bottom">
+		<p>SONDER.COM</p>
+		<hr/>
+	</div>
+	<div class="us">
+		<p>2005-2021 sonder.com,all rights reserved 北京颂德有限公司&nbsp&nbsp&nbsp&nbsp&nbsp
+			<a href="">联系我们 ·</a>
+			<a href=""> 法律声明 ·</a>
+			<a href=""> 帮助中心 ·</a>
+			<a href=""> 移动应用 ·</a>
+			<a href=""> 投放广告</a>
+		</p>
+	</div>
+
+	
+
+
+
 </body>
 </html>
